@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Kanvas Studio</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="brand">Kanvas<span>Studio</span> Admin</a>
+      <button id="logout-btn" class="btn btn-secondary">Keluar</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h2 id="form-title">Tambah Layanan</h2>
+
+    <form id="service-form">
+      <input type="hidden" name="id">
+      <label>Nama layanan
+        <input type="text" name="name" required>
+      </label>
+      <label>Deskripsi
+        <textarea name="description" required></textarea>
+      </label>
+      <label>Harga mulai (Rp)
+        <input type="number" name="price_start" min="0" step="1" required>
+      </label>
+      <div class="actions">
+        <button type="submit" class="btn">Simpan</button>
+        <button type="button" id="cancel-btn" class="btn btn-secondary" hidden>Batal</button>
+      </div>
+    </form>
+    <p id="status" class="status"></p>
+
+    <h2 class="spaced">Daftar Layanan</h2>
+    <table>
+      <thead>
+        <tr><th>Nama</th><th>Harga Mulai</th><th>Aksi</th></tr>
+      </thead>
+      <tbody id="service-table"></tbody>
+    </table>
+
+    <h2 class="spaced">Pesan Masuk</h2>
+    <table>
+      <thead>
+        <tr><th>Pengirim</th><th>Email</th><th>Pesan</th><th>Waktu</th></tr>
+      </thead>
+      <tbody id="message-table"></tbody>
+    </table>
+  </main>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

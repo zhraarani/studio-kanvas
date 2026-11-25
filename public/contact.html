@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Kanvas Studio</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="brand">Kanvas<span>Studio</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Beranda</a></li>
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/services.html">Layanan</a></li>
+        <li><a href="/contact.html">Kontak</a></li>
+        <li><a href="/login.html">Masuk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h2>Hubungi Kami</h2>
+
+    <form id="contact-form">
+      <label>Nama
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Pesan
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+
+    <p id="status" class="status"></p>
+  </main>
+  <footer class="footer">&copy; 2026 Kanvas Studio</footer>
+  <script src="/js/contact.js"></script>
+</body>
+</html>
